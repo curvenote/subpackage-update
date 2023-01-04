@@ -1,6 +1,6 @@
 {
   "name": "subpackage-update",
-  "version": "0.0.5",
+  "version": "0.0.1",
   "description": "Utilities for working with subpackage modules.",
   "sideEffects": false,
   "keywords": [
@@ -30,6 +30,7 @@
   ],
   "scripts": {
     "clean": "rm -rf dist",
+    "test": "echo \"No tests!\"",
     "copy:version": "echo \"const version = '\"$npm_package_version\"';\nexport default version;\" > src/version.ts",
     "unlink": "npm uninstall -g subpackage-update;",
     "link": "npm run unlink; npm link;",
